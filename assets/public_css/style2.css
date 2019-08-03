@@ -1,0 +1,665 @@
+
+@charset "utf-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:        Doctoress - Doctor Appointment & Prescription System with Website
+Version:        1.0
+Last change:    22/10/2016
+Primary use:    Doctor Appointment & Prescription
+Author:         BDTASK
+URL:            https://themeforest.net/user/bdtask
+-------------------------------------------------------------------*/
+/*
+This file contains the common info of this system.
+*/
+/*------------------------------------------------------------------
+[Table of contents]
+    * Body 
+    * Login page
+    * Preloader
+    * Dashboard
+        * Prescription
+            * Prescription list
+            * Create New Prescription
+        * Appointment
+            * Create Appointment 
+            * Appointment list
+        * Patient
+            * Create New Patient
+            * Patient list
+        * Schedule
+            * Add Scedule
+            * Schedule list
+        * Emergency Stop
+            * Stop
+            * Emergrncy Stop list
+        * Venue
+            * Create New Venue
+            * Venue list
+        * Setup Data
+            * Add Medicine
+            * Medicine list
+            * Add Company
+            * Add Group
+            * Add Advice
+            *Insert Test Name
+            *Test list
+        * Users
+            * Create New user
+            * User list
+        * Web part (This style sheet call from style_web.css)
+    * Footer
+* ===============================================*/
+
+
+/* === Common Style === */
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 796.8px;
+}
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+
+
+
+/*============ Container =========================*/
+
+.container {
+    width: 796.8px;
+     background-color: #fff;
+}
+.header_area{
+border-top: 7px solid #186AAB;
+border-bottom: 7px double #EAEAEA;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #186AAB;
+color: #fff;
+}
+
+
+.header_area1{
+  width: 340px;
+  float: left;
+  color: #fff;
+}
+
+.header_area2{
+  width:455px;
+  float: right;
+  color: #fff;
+}
+
+.address_area{
+  border-bottom: 7px double #EAEAEA;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  
+}
+
+.d-address{
+    width: 425px;
+    float: left;
+    padding-left: 15px;
+}
+
+.venue{
+  width: 350px;
+   float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+
+.patient_area{
+  border-bottom: 7px double #EAEAEA;
+}
+.right-side{
+  border:1px solid #EAEAEA;
+  float: left;
+  width: 550px;
+}
+.left-side{
+  border:1px solid #EAEAEA;
+  float: left;
+  width: 245px;
+}
+
+.content-details{
+    border-bottom: 7px double #EAEAEA;
+        padding-top: 10px;
+}
+.footer_area{
+  
+}
+.mini-footer{
+border-top: 7px double #EAEAEA;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #186AAB;
+color: #fff;
+padding-left: 25px;
+}
+
+
+
+.test-list ul li {
+  list-style: none;
+  font-size: 15px;
+  color: #000;
+  line-height: 25px;
+ margin-left: -40px;
+   
+}
+
+ .print ul li {
+  margin-top: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: #074C83;
+    
+}
+ .print ul li a {
+    color: #fff;
+
+}
+/*=============== CONTAINER END ====================*/
+
+
+
+.top-bar {
+    background-color: #186AAB;
+
+}
+
+.top-bar .left-text p {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+    margin-left: 30px;
+}
+
+.top-bar .left-text p b{
+    text-transform: uppercase;
+}
+
+.social-icons ul, .social-icons ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: #074C83;
+}
+
+.social-icons ul li a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 12px;
+    margin-left: -5px;
+    transition: all .3s ease;
+}
+
+.social-icons ul li a:hover {
+    color: #fff;
+    background:#186AAB;
+}
+
+.header {
+    padding: 10px 20px;
+    border-bottom: 7px double #EAEAEA;
+}
+
+
+.logo {
+    width: 250px;
+    float: left;
+
+}
+.header-right-info{
+    width: 500px;
+     float: left;
+     padding-left: 20px;
+}
+
+.single-header-info {
+    float: left;
+    padding-left: 10px;
+}
+
+.single-header-info .icon-box, .single-header-info .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-header-info .icon-box .inner-box {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #E1E1E1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    margin-right: 15px;
+}
+
+.sec-title h2 {
+    font-size: 25px;
+    color: #202A30;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	text-align:center;
+}
+.sec-title.colored span.decor {
+    border-color: #2562B3;
+}
+.sec-title span.decor {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #E6E6E6;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.sec-title.colored span.decor::before, .sec-title.colored span.decor::after {
+    background: #2562B3;
+}
+.sec-title span.decor::before {
+    left: 14px;
+}
+.sec-title span.decor::before, .sec-title span.decor::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    height: 2px;
+    background: #E6E6E6;
+    z-index: -1;
+}.sec-title.colored span.decor span.inner {
+    background: #2562B3;
+}
+.sec-title span.inner {
+    width: 6px;
+    height: 6px;
+    background: #EAEAEA;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+.sec-title.colored span.decor::before, .sec-title.colored span.decor::after {
+    background: #2562B3;
+}
+.sec-title span.decor::after {
+    right: 14px;
+}
+.sec-title span.decor::before, .sec-title span.decor::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    height: 2px;
+    background: #E6E6E6;
+    z-index: -1;
+}
+
+
+.information-details ul li:first-child {
+    margin-top: 10px;
+}
+.information-details ul li {
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    color: #474747;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+
+.ccc{
+    background-color: #fff;
+    padding-top: 20px;
+	float: left;
+    position: relative;
+
+}
+.information{
+    float: left;
+    display: block;
+	position: relative;
+    width: 50%;
+    border-right: 1px #ddd solid;
+    padding-right: 15px;
+}
+
+
+.mape{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.inners {
+    background: #fff;
+    position: relative;
+    background-color: #fff;
+    border-top: 7px double #EAEAEA;
+}
+.contacts {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 0px;
+}
+.contacts .icon {
+    margin-bottom: 18px;
+    color: #186AAB;;
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+    height: 40px;
+}
+.contacts h4 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.f-one{
+    float: left;
+    width: 200px
+}
+.f-tow{
+    float: left;
+    width: 200px
+}
+.f-three{
+    float: left;
+    width: 180px
+}
+.f-four{
+    float: left;
+    width: 170px
+}
+
+
+.footer{
+    padding: 10px 30px;
+    background-color: #186AAB;
+    text-align: center;
+}
+.footer p {
+    color: #fff;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+
+
+/*============================= prescription pages ============================ */ 
+.logo h4{
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.logo address{
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.details-content{
+    background-color: #fff;
+}
+.patient-details {
+    padding: 30px 0px;
+    border-bottom: 7px double #EAEAEA;
+}
+.patient-details h3 {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+.list {
+    border: 0px;
+    padding: 0px;
+    border-right: 7px double #EAEAEA;
+    margin-top: 10px;
+    
+}
+.marg{
+    margin-top: 10px;
+}
+
+/*appointment information*/
+.google-map > iframe{width:320px!important;height:310px!important;}
+@media print {
+    .footer{
+        background: #186AAB !important;
+        text-align: center;
+             color: #fff !important;
+    }
+    .top-bar {
+        background:  #186AAB !important; 
+        color: #fff !important;
+    }
+    .google-map > iframe{width:320px!important;height:310px!important;}
+}
+
+/*prescroption print*/
+
+@media print {
+    .mini-footer{
+        background: #186AAB !important;
+        text-align: center;
+             color: #fff !important;
+    }
+
+    .header_area {
+        background:  #186AAB !important; 
+        color: #fff !important;
+    }
+    .header_area1 {
+        color: #fff !important;
+    }
+     .header_area1 b {
+        color: #fff !important;
+    }
+    .header_area2 {
+        color: #fff !important;
+    }
+    a[href], 
+    a[href]:after,
+    a[href]:before, 
+    .no-print{content:"" !important;display:none !important;visibility:hidden !important;}
+}
+
+/*pationt history*/
+ .switch-print{display:none}
+    @media print {
+        .footer{
+            background: #186AAB !important;
+            text-align: center;
+                 color: #fff !important;
+        }
+        .top-bar {
+            background:  #186AAB !important; 
+            color: #fff !important;
+        }
+       a[href], 
+       .no-print{display: none !important;}
+       .switch-print{display: block !important;}
+    }
+
+.h2 {
+	font-size:x-large;
+	font-weight:800;
+	padding-bottom:35px;
+	
+	}
+	
+.address_footer{
+	font-size: 22px;
+	text-align:left;
+	padding:20px;	
+}
+
+.address_footer_text{
+	font-size: 15px;
+	color:rgba(128,128,128,1.00);
+	}
+	
+.address_footer_recepition {
+	font-size: 15px;
+	font-weight:400;
+	color:rgba(255,255,255,1.00);
+	text-align:center;
+	}
+	
+
+/****** Responsive
+------------------------------------------------------------------------------*/
+@media(min-width:0px) and (max-width:767px){
+	.ccc {
+	    width: 100%;	    		
+	}
+    .information-details ul li {
+        padding: 0px 0;
+        min-height: auto;
+		width:100%;
+    }
+    .sec-title h2 {
+    font-size: 20px;
+	text-align:center;
+}
+.sec-title span.decor {
+    
+    
+}
+    
+	.container_x {
+		width:100%;
+    
+	} 
+
+    .h2{
+		text-align:left;
+		padding:30px;
+        
+    }
+    .about-grid-inner {
+        padding: 15px;
+    }
+    .mape {
+        width: 100%;
+        margin: 10px ;
+		padding:30px;
+		
+    }
+    .address_footer{
+	font-size: 14px;
+	text-align:left;
+	padding:20px;
+	float:left;
+	position:relative;
+    }
+	
+	.address_footer_text{
+	font-size: 14px;
+	color:rgba(128,128,128,1.00);
+	padding:10px;
+	
+	}
+	
+	.address_footer_recepition {
+	font-size: 14px;
+	color:rgba(255,255,255,1.00);
+	padding:10px;}
+	
+    
+ .footer{
+    padding: 10px 30px;
+    background-color: #186AAB;
+    text-align: center;
+	width:50% !important;
+}
+.footer p {
+    color: #fff;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+}
+@media(min-width:768px) and (max-width:1199px){
+    .navbar-default .navbar-nav > li > a {
+        padding: 16px 7px;
+        font-size: 12px;
+    }
+    .about-grid-inner {
+        background: rgba(17, 167, 250, 0.5);
+        padding: 15px;
+    }
+    .tab{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.modal-dialog{
+    width: 70%;
+}
+
+#pic img{
+    width: 100%;
+    height: 320px;
+}
+
+
+/*map*/
+ .google-map > iframe{
+    width:320px!important;
+    height:320px!important;
+}
+
+.p_name{
+    color:#e7505a; padding-bottom: 20px;
+}
+.schedul1{padding-bottom:20px;}
+        

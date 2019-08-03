@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 796.8px;
+}
+a, a:hover, a:active {
+    text-decoration: none;
+}
+/*.container {
+    width: 970px;
+}*/
+.top-bar {
+    background-color: #186AAB;
+    border-bottom: 7px double rgb(234, 234, 234);
+}
+.top-bar .left-text p {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+    margin-left: 30px;
+}
+.top-bar .left-text p b{
+    text-transform: uppercase;
+}
+
+.social-icons ul, .social-icons ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/*.social-icons ul li:first-child a {
+    border-left: 1px solid #005496;
+}*/
+.social-icons ul li a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    border-left: 1px solid #005496;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 12px;
+    margin-left: -5px;
+    transition: all .3s ease;
+}
+.social-icons ul li a:hover {
+    color: #fff;
+    background: #074C83;
+}
+
+.header {
+    padding: 40px 20px;
+    border-bottom: 7px double #EAEAEA;
+    background-color: #fff;
+}
+.logo {
+    width: 250px;
+}
+.single-header-info {
+    float: left;
+    padding-left: 10px;
+}
+.single-header-info .icon-box, .single-header-info .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-header-info .icon-box .inner-box {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #E1E1E1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    margin-right: 15px;
+}
+.single-header-info .content h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.single-header-info .content p {
+    font-size: 13px;
+    margin: 0;
+    color: #B6B6B6;
+}
+.single-header-info .content p b {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+}
+.single-header-info .thm-btn {
+    margin: 7px 0;
+}
+
+.thm-btn {
+    background: #186AAB;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 35px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+.thm-btn:hover, .thm-btn.inverse {
+    background-color: #fff;
+    border-color: #186AAB;
+    color: #186AAB;
+}
+
+.information-details, .maps {
+    border: 1px solid #EAEAEA;
+    padding: 20px;
+}
+.sec-title {
+    margin: 30px 0px;
+}
+.sec-title h2 {
+    font-size: 25px;
+    color: #202A30;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sec-title.colored span.decor {
+    border-color: #2562B3;
+}
+.sec-title span.decor {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #E6E6E6;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.sec-title.colored span.decor::before, .sec-title.colored span.decor::after {
+    background: #2562B3;
+}
+.sec-title span.decor::before {
+    left: 14px;
+}
+.sec-title span.decor::before, .sec-title span.decor::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    height: 2px;
+    background: #E6E6E6;
+    z-index: -1;
+}.sec-title.colored span.decor span.inner {
+    background: #2562B3;
+}
+.sec-title span.inner {
+    width: 6px;
+    height: 6px;
+    background: #EAEAEA;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+.sec-title.colored span.decor::before, .sec-title.colored span.decor::after {
+    background: #2562B3;
+}
+.sec-title span.decor::after {
+    right: 14px;
+}
+.sec-title span.decor::before, .sec-title span.decor::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    height: 2px;
+    background: #E6E6E6;
+    z-index: -1;
+}
+
+
+ul {
+    padding-left: 0;
+}
+.information-details ul li:first-child {
+    margin-top: 10px;
+}
+.information-details ul li {
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    color: #474747;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.information-details ul li span{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.information-details ul li::after {
+    position: absolute;
+    content: "";
+    background-color: #efefef;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.information {
+    padding: 0px 20px 50px;
+    background-color: #fff;
+}
+.inners {
+    background: #fff;
+    position: relative;
+    background-color: #fff;
+    border-top: 7px double #EAEAEA;
+}
+.contacts {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 0px;
+}
+.contacts .icon {
+    margin-bottom: 18px;
+    color: #186AAB;;
+    font-size: 40px;
+    line-height: 40px;
+    display: inline-block;
+    height: 40px;
+}
+.contacts h4 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 10px 30px;
+    background-color: #186AAB;
+    text-align: center;
+    border-top: 7px double rgb(234, 234, 234);
+}
+.footer p {
+    color: #fff;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+/*============================= prescription pages ============================ */ 
+.logo h4{
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.logo address{
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.details-content{
+    background-color: #fff;
+}
+.patient-details {
+    padding: 30px 0px;
+    border-bottom: 7px double #EAEAEA;
+}
+.patient-details h3 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    font-weight: 600;
+}
+.list {
+    border: 0px;
+    padding: 0px;
+    border-right: 7px double #EAEAEA;
+    height: 500px;
+}
+.marg{
+    margin-top: 30px;
+}
+
+
+
+.attributionBlock {
+    line-height: 0.4;
+    /*font-family: monospace;*/
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.attributionBlock [itemprop="name"] {
+    color: rgba(36, 27, 20, 0.76);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.attributionBlock [itemprop="name"]::before {
+    content: attr(data-signature);
+    display: block;
+    height: 0;
+    position: relative;
+    top: -42px;
+    color: #8189a2;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 3em;
+    letter-spacing: -2px;
+}
+.attributionBlock [itemprop="jobTitle"] {
+    color: rgba(36, 27, 20, 0.7);
+    font-size: 0.9em;
+}

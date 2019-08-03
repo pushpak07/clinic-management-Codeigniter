@@ -1,0 +1,114 @@
+.m-l-10{
+    margin-left: 10px;
+}
+.prescription-table.panel-bd > .panel-heading {
+    border-bottom: 0;
+}
+.prescription-select h3 {
+    font-size: 27px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+.prescription-table .panel-footer .form-group {
+    margin-bottom: 0;
+}
+.prescription-table .panel-footer {
+    border-bottom: 1px solid #e1e6ef;
+}
+
+.prescription-table label {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.prescription-table .prettydropdown.arrow {
+    position: relative;
+    left: 0;
+    margin-bottom: 15px;
+}
+.prescription-table .prettydropdown > ul {
+    border: 1px solid #e4e5e7;
+    color: inherit;
+}
+.prescription-select{
+    margin: 15px 0
+}
+
+.prescription-table .form-control {
+    font-size: 16px;
+    color: #454545;
+    font-weight: 400;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/*dropdown*/
+.ui-widget {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+}
+.ui-selectmenu-button.ui-button {
+    width: 100%;
+    border-radius: 0;
+    background: #fff;
+    height: 34px;
+    border: 1px solid #e4e5e7;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #e4e5e7;
+    margin-top: -1px;
+    border-radius: 0;
+}
+.ui-selectmenu-icon.ui-icon {
+    margin-top: 2px;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active, 
+.ui-button.ui-state-active:hover {
+    border: 1px solid #37a000;
+    background: #37a000;
+    font-weight: normal;
+    color: #fff;
+}
+
+/*Tokenfield*/
+.tokenfield .token .token-label {
+    font-weight: 400;
+    font-size: 14px;
+}
+.tokenfield.focus {
+    border-color: #37a000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.tt-dropdown-menu {
+    border: 0;
+    width: 180px;
+    min-width: 180px;
+    font-weight: 400;
+    border-radius: 0;
+    /*border-top: 1px solid #558B2F;*/
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.15);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.15);
+    padding: 0;
+}
+/*.tokenfield .token-input {
+    width: 100% !important;
+    min-width: 100% !important;
+}*/
+.tokenfield .token-input {
+    width: 175px!important;
+    min-width: 175px!important;
+}
+
+
+.tokenfield .token .close {
+    line-height: 1.10em;
+}
+.tokenfield .twitter-typeahead .tt-suggestions {
+    font-size: 15px;
+}
+.tt-suggestion {
+    padding: 5px 10px;
+}

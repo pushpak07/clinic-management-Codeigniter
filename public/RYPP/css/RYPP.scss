@@ -1,0 +1,199 @@
+// Sizes
+
+$max_h: 360px;
+$play_list_head_h: 64px;
+
+// Width
+$playlist_width: 250px;
+
+// Colorw
+$col_main_bg: #1a1a1a;
+$col_main_text: #999;
+
+$col_li_bg: #222;
+$col_li_bg_active: #3a3a3a;
+$col_accent: #c03636;
+
+// Fonts
+$font_base: Arial, Helvetica, sans-serif;
+
+.RYPP { /* Youtube Player With Playlist */
+  width: 100%;
+  position: relative;
+  padding-right: $playlist_width;
+  background: $col_main_bg;
+  overflow: hidden;
+
+  font: 400 14px/120% $font_base;
+  color: $col_main_text;
+
+  // Main video box
+  .RYPP-video {
+    width: 100%;
+    padding-top: 56.25%;
+    float: left;
+    position: relative;
+
+    > iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+
+  &.r16-9 {
+    .RYPP-video {
+      padding-top: 56.25%;
+    }
+  }
+
+  &.r4-3 {
+    .RYPP-video {
+      padding-top: 75%;
+    }
+  }
+
+  &.r2-1 {
+    .RYPP-video {
+      padding-top: 50%;
+    }
+  }
+
+  .RYPP-items {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: $play_list_head_h;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+
+  // Playlist
+  .RYPP-playlist {
+    width: $playlist_width;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: $col_li_bg;
+    a {
+      color: $col_main_text;
+      &:hover {
+        color: #fff;
+      }
+    }
+    > header {
+      width: 100%;
+      height: $play_list_head_h;
+      padding: 16px 0 0 8px;
+
+      background: $col_li_bg;
+      border-left: 8px solid $col_li_bg;
+      border-right: 8px solid $col_li_bg;
+      border-bottom: 1px solid #3a3a3a;
+      z-index: 2;
+      ._h1 {
+        margin: 0 0 4px 0;
+        padding: 0;
+
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    ol {
+      padding: 0 0 16px 0;
+      margin: 0;
+      list-style: none;
+
+      counter-reset: item;
+      li {
+        // width: 100%;
+        position: relative;
+        vertical-align: middle;
+        overflow: hidden;
+        padding: 12px 0 12px 12px;
+        > img {
+          width: 18%;
+          display: inline-block;
+          vertical-align: middle;
+          border: 2px solid transparent;
+        }
+        > p {
+          width: 76%;
+          margin: 0;
+          padding: 0 16px 0 0;
+          float: right;
+          display: inline-block;
+          vertical-align: middle;
+
+          text-align: left;
+          color: #cacaca;
+          > small {
+            margin: 0;
+            padding: 0;
+            font-size: 80%;
+          }
+        }
+        &:hover {
+          background-color: $col_li_bg_active;
+          cursor: pointer;
+        }
+        &.selected {
+          background-color: $col_li_bg_active;
+          cursor: pointer;
+          > p {
+            color: #fff;
+          }
+          > img {
+            border: 2px solid $col_accent;
+          }
+          &:before {
+            content: '▶';
+            font-size: 10px;
+            color: $col_accent;
+          }
+        }
+        &:before {
+          counter-increment: item;
+          content: counter(item);
+          font-size: 80%;
+        }
+      }
+    }
+  }
+}
+
+// Chrome scrollbar
+.RYPP-items::-webkit-scrollbar {
+  width: 6px;
+  background: $col_li_bg_active;
+}
+.RYPP-items::-webkit-scrollbar-thumb {
+  background: $col_main_text;
+}
+
+// Responsive sample
+@media only screen and (max-width: 639px) {
+  .RYPP {
+    padding-right: 0;
+    .RYPP-playlist {
+      width: 100%;
+      position: static;
+      float: left;
+      .RYPP-items {
+        position: static;
+        max-height: 350px;
+        overflow: auto;
+      }
+    }
+  }
+}
